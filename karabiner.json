@@ -22,7 +22,7 @@
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "parameters": { "basic.to_delayed_action_delay_milliseconds": 300 },
-                                "to": [{ "key_code": "j" }],
+                                "to": [],
                                 "to_delayed_action": {
                                     "to_if_canceled": [
                                         { "key_code": "escape" },
