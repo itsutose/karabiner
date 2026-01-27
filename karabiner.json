@@ -4,37 +4,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Terminal内でのみ、jj を Esc と英数切り替えに割り当てる",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.mitchellh.ghostty",
-                                            "com.apple.Terminal",
-                                            "com.googlecode.iterm2"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "parameters": { "basic.to_delayed_action_delay_milliseconds": 300 },
-                                "to": [],
-                                "to_delayed_action": {
-                                    "to_if_canceled": [
-                                        { "key_code": "escape" },
-                                        { "key_code": "japanese_eisuu" }
-                                    ],
-                                    "to_if_invoked": [{ "key_code": "j" }]
-                                },
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Firefox Custom Shortcuts (Right Control)",
                         "manipulators": [
                             {
