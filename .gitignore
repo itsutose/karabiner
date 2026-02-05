@@ -4,3 +4,5 @@
 # 古いプロファイルファイル（バックアップとして残す場合はコメントアウト）
 # Default_profile_karabiner.json
 # dev_profile_karabiner.json
+*.backup
+karabiner.json.before_*
