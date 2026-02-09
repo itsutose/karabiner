@@ -5,4 +5,8 @@
 # Default_profile_karabiner.json
 # dev_profile_karabiner.json
 *.backup
+*.backup.*
 karabiner.json.before_*
+
+.cursorindexingignore
+.specstory
