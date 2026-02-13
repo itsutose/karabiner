@@ -4,121 +4,19 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Ghostty: Right_Cmd+J/;/K/L/I/O → F13,F16-F20 (直接変換) - DISABLED",
+                        "description": "Terminal/Editor: Right_Cmd → Left_Cmd (Ghostty + iTerm2）",
                         "enabled": false,
-                        "manipulators": [
+                        "conditions": [
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
+                                "bundle_identifiers": [
+                                    "^com\\.mitchellh\\.ghostty$",
+                                    "^com\\.googlecode\\.iterm2$"
                                 ],
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [{ "key_code": "f13" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "semicolon",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [{ "key_code": "f16" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [{ "key_code": "f17" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [{ "key_code": "f18" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "i",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [{ "key_code": "f19" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "o",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [{ "key_code": "f20" }],
-                                "type": "basic"
+                                "type": "frontmost_application_if"
                             }
-                        ]
-                    },
-                    {
-                        "description": "Terminal/Editor: Right_Cmd → Left_Cmd (Ghostty + iTerm2 + Cursor)",
+                        ],
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": { "mandatory": ["right_command"] }
@@ -132,16 +30,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": { "mandatory": ["right_command"] }
@@ -155,16 +43,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": { "mandatory": ["right_command"] }
@@ -178,16 +56,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "semicolon",
                                     "modifiers": { "mandatory": ["right_command"] }
@@ -201,15 +69,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "i",
                                     "modifiers": { "mandatory": ["right_command"] }
@@ -223,15 +82,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "o",
                                     "modifiers": { "mandatory": ["right_command"] }
@@ -356,11 +206,13 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
+                                            "^com.todesktop.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
                                 ],
+                                "description": "Explorer panel",
                                 "from": {
                                     "key_code": "8",
                                     "modifiers": {
@@ -380,11 +232,13 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
+                                            "^com.todesktop.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
                                 ],
+                                "description": "Search panel",
                                 "from": {
                                     "key_code": "9",
                                     "modifiers": {
@@ -404,11 +258,13 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
+                                            "^com.todesktop.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
                                 ],
+                                "description": "Git panel",
                                 "from": {
                                     "key_code": "0",
                                     "modifiers": {
@@ -428,11 +284,13 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
+                                            "^com.todesktop.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
                                 ],
+                                "description": "debug panel",
                                 "from": {
                                     "key_code": "hyphen",
                                     "modifiers": {
@@ -447,41 +305,18 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "equal_sign",
-                                    "modifiers": {
-                                        "mandatory": ["right_control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "d",
-                                        "modifiers": ["left_command", "left_shift"]
-                                    }
-                                ],
-                                "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "cursor タブ移動",
+                        "description": "cursor, zed: タブ、カーソル移動",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -495,8 +330,8 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "close_bracket",
-                                        "modifiers": ["left_command", "left_shift"]
+                                        "key_code": "left_arrow",
+                                        "modifiers": ["left_command", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
@@ -505,7 +340,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -519,8 +355,8 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "backslash",
-                                        "modifiers": ["left_command", "left_shift"]
+                                        "key_code": "right_arrow",
+                                        "modifiers": ["left_command", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
@@ -529,11 +365,39 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
                                 ],
+                                "description": "cursor, zed: go back",
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": ["right_command"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "hyphen",
+                                        "modifiers": ["left_control"]
+                                    }
+                                ],
+                                "type": "basic" 
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "description": "cursor, zed: go forward",
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -543,7 +407,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "semicolon",
+                                        "key_code": "international1",
                                         "modifiers": ["left_control"]
                                     }
                                 ],
@@ -552,18 +416,89 @@
                         ]
                     },
                     {
-                        "description": "right_command + h, j, k, l, ;, : → left_shift + tab, left_option + left ...",
+                        "description": "cursor problem, terminal, debug console",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
                                         ],
-                                        "type": "frontmost_application_unless"
+                                        "type": "frontmost_application_if"
                                     }
                                 ],
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": ["right_control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "m",
+                                        "modifiers": ["left_command", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": ["right_control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": ["left_control", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^dev\\.zed\\.Zed$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "period",
+                                    "modifiers": {
+                                        "mandatory": ["right_control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "y",
+                                        "modifiers": ["left_shift", "left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "GLOBAL right_command + h, j, k, l, ;, : → ブラウザなど、タブ移動、前後ページ、復元削除",
+                        "manipulators": [
+                            {
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
@@ -580,15 +515,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "quote",
                                     "modifiers": {
@@ -605,15 +531,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
@@ -630,15 +547,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
@@ -655,15 +563,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
@@ -680,15 +579,6 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.mitchellh\\.ghostty$",
-                                            "^com\\.googlecode\\.iterm2$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "semicolon",
                                     "modifiers": {
@@ -707,7 +597,7 @@
                         ]
                     },
                     {
-                        "description": "right_control + japanese_kana → raycast",
+                        "description": "GLOBAL right_control + japanese_kana → raycast",
                         "manipulators": [
                             {
                                 "from": {
@@ -728,7 +618,7 @@
                         ]
                     },
                     {
-                        "description": "left_shift + japanees_eisuu(^キー) → caps_lock",
+                        "description": "GLOBAL left_shift + japanees_eisuu(^キー) → caps_lock",
                         "manipulators": [
                             {
                                 "from": {
@@ -749,7 +639,7 @@
                         ]
                     },
                     {
-                        "description": "right command + u / p → desktop left / right",
+                        "description": "GLOBAL right command + u / p → desktop left / right",
                         "manipulators": [
                             {
                                 "from": {
@@ -786,7 +676,7 @@
                         ]
                     },
                     {
-                        "description": "right command + i, o → change order",
+                        "description": "GLOBAL right command + i, o → change order",
                         "manipulators": [
                             {
                                 "from": {
@@ -839,7 +729,7 @@
                         ]
                     },
                     {
-                        "description": "right_control + u, o → backspace, delete",
+                        "description": "GLOBAL right_control + u, o → backspace, delete",
                         "manipulators": [
                             {
                                 "from": {
@@ -876,7 +766,7 @@
                         ]
                     },
                     {
-                        "description": "right_control + h, j, k, l → left, down, up, right (vim)",
+                        "description": "GLOBAL right_control + h, j, k, l → left, down, up, right (vim)",
                         "manipulators": [
                             {
                                 "from": {
@@ -938,122 +828,6 @@
                                     {
                                         "key_code": "right_arrow",
                                         "modifiers": []
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "cursor problem, terminal, debug console",
-                        "enabled": false,
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "m",
-                                    "modifiers": {
-                                        "mandatory": ["right_control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "m",
-                                        "modifiers": ["left_command", "left_shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": {
-                                        "mandatory": ["right_control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "open_bracket",
-                                        "modifiers": ["left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com.todesktop.230313mzl4w4u92$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "period",
-                                    "modifiers": {
-                                        "mandatory": ["right_control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "y",
-                                        "modifiers": ["left_shift", "left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "right_control + 8 / 9 → desktop left / right",
-                        "enabled": false,
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "8",
-                                    "modifiers": {
-                                        "mandatory": ["right_control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": ["left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "9",
-                                    "modifiers": {
-                                        "mandatory": ["right_control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_control"]
                                     }
                                 ],
                                 "type": "basic"
