@@ -687,43 +687,6 @@
                         ]
                     },
                     {
-                        "description": "GLOBAL right_command + 0/- → ウィンドウ切替（Raycast経由）",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "0",
-                                    "modifiers": {
-                                        "mandatory": ["right_command"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f19",
-                                        "modifiers": ["left_control", "left_shift", "left_command", "left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "hyphen",
-                                    "modifiers": {
-                                        "mandatory": ["right_command"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f20",
-                                        "modifiers": ["left_control", "left_shift", "left_command", "left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "GLOBAL right command + i, o → change order",
                         "manipulators": [
                             {
