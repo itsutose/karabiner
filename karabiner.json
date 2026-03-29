@@ -4,8 +4,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Terminal/Editor: Right_Cmd → Left_Cmd (Ghostty + iTerm2）",
-                        "enabled": false,
                         "conditions": [
                             {
                                 "bundle_identifiers": [
@@ -15,6 +13,8 @@
                                 "type": "frontmost_application_if"
                             }
                         ],
+                        "description": "Terminal/Editor: Right_Cmd → Left_Cmd (Ghostty + iTerm2）",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -392,7 +392,7 @@
                                         "modifiers": ["left_control"]
                                     }
                                 ],
-                                "type": "basic" 
+                                "type": "basic"
                             },
                             {
                                 "conditions": [
