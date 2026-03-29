@@ -687,7 +687,7 @@
                         ]
                     },
                     {
-                        "description": "GLOBAL right command + i, o → window switcher (via Hyper+I/O → Raycast)",
+                        "description": "GLOBAL right command + i, o → window switcher (via Ctrl+Cmd+Opt+I/O → Raycast, Shift通過で同一アプリ)",
                         "manipulators": [
                             {
                                 "from": {
@@ -700,7 +700,7 @@
                                 "to": [
                                     {
                                         "key_code": "i",
-                                        "modifiers": ["left_control", "left_shift", "left_command", "left_option"]
+                                        "modifiers": ["left_control", "left_command", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
@@ -716,7 +716,7 @@
                                 "to": [
                                     {
                                         "key_code": "o",
-                                        "modifiers": ["left_control", "left_shift", "left_command", "left_option"]
+                                        "modifiers": ["left_control", "left_command", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
