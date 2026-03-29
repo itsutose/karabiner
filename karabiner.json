@@ -498,8 +498,8 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "y",
-                                        "modifiers": ["left_shift", "left_command"]
+                                        "key_code": "period",
+                                        "modifiers": ["left_control"]
                                     }
                                 ],
                                 "type": "basic"
